@@ -9,133 +9,128 @@
     body {
         margin:0;
         font-family: 'Segoe UI', sans-serif;
-        background:#ffffff;
+        background:#f3f4f6;
         color:#333;
         scroll-behavior: smooth;
     }
-
     /* Navbar */
     nav {
         display:flex;
         justify-content:center;
         gap:35px;
         padding:18px 0;
-        background:#fff;
+        background:#ffffff;
         position:fixed;
         width:100%;
         top:0;
-        box-shadow:0 2px 8px rgba(0,0,0,0.1);
+        box-shadow:0 2px 12px rgba(0,0,0,0.08);
         z-index:999;
     }
     nav a {
-        color:#444;
-        font-weight:bold;
+        color:#333;
+        font-weight:600;
         text-decoration:none;
+        font-size:17px;
         transition:0.3s;
-        font-size:16px;
     }
     nav a:hover {
-        color:#ff5733;
+        color:#e63946;
     }
 
-    /* Hero */
     header {
-        padding-top:140px;
+        padding-top:150px;
         display:flex;
         justify-content:space-between;
         align-items:center;
-        padding:140px 10%;
+        padding:150px 10%;
     }
-    .title h1 { font-size:3rem; font-weight:700; }
-    .title span { color:#ff5733; }
+    .title h1 { font-size:3.5rem; font-weight:700; }
     .title h2 { color:#555; font-size:1.6rem; }
+    .title span { color:#e63946; }
 
     .btn-group a {
         display:inline-block;
-        margin:12px 12px 0 0;
-        padding:10px 24px;
-        border:2px solid #ff5733;
+        padding:12px 28px;
+        border:2px solid #e63946;
         border-radius:32px;
-        color:#ff5733;
+        color:#e63946;
         font-weight:600;
         transition:0.3s;
+        margin:15px 15px 0 0;
         text-decoration:none;
     }
     .btn-group a:hover {
-        background:#ff5733;
+        background:#e63946;
         color:#fff;
-        box-shadow:0 4px 16px rgba(255,87,51,0.3);
+        box-shadow:0 5px 16px rgba(230,57,70,0.3);
     }
 
     .hero-img img {
-        width:350px;
-        border-radius:12px;
-        border:3px solid #ff5733;
-        box-shadow:0 5px 22px rgba(0,0,0,0.15);
+        width:380px;
+        border-radius:50%;
+        border:5px solid #e63946;
+        box-shadow:0 0 25px rgba(230,57,70,0.4);
         transition:0.3s;
     }
-    .hero-img img:hover {
-        transform:scale(1.03);
-    }
+    .hero-img img:hover { transform:scale(1.05); }
 
     section { padding:80px 10%; }
-    h2 { color:#ff5733; margin-bottom:25px; font-size:2rem; }
+    h2 { color:#e63946; margin-bottom:25px; font-size:2.2rem; }
 
     /* Skills */
     .skills {
-        display:flex; gap:15px; justify-content:center; flex-wrap:wrap;
+        display:flex; gap:18px; justify-content:center; flex-wrap:wrap;
     }
     .skill {
-        padding:10px 25px;
-        background:#ffebe5;
+        background:#ffe8e8;
+        padding:12px 28px;
         border-radius:30px;
-        font-size:15px;
-        border:1px solid #ffbdad;
-        transition:0.3s;
+        border:1px solid #e63946;
         font-weight:600;
+        transition:0.3s;
     }
     .skill:hover {
-        background:#ff5733; color:#fff;
+        background:#e63946;
+        color:#fff;
         transform:translateY(-3px);
     }
 
     /* About */
     .about-box {
-        background:#f5f5f5;
-        padding:35px;
+        background:#fff;
+        padding:40px;
         border-radius:12px;
         text-align:center;
-        border:1px solid #eee;
+        box-shadow:0 0 10px rgba(0,0,0,0.06);
     }
     .stats {
-        display:flex; justify-content:space-around;
-        margin-top:30px;
+        display:flex; justify-content:space-around; margin-top:30px;
     }
     .stat h3 {
-        color:#ff5733;
+        color:#e63946;
         font-size:2rem;
-        margin-bottom:4px;
+        margin:0;
     }
 
     /* Projects */
     .project-card {
-        background:#fff;
-        padding:25px;
-        border-radius:12px;
-        margin-bottom:20px;
-        border:1px solid #eee;
+        background:#ffffff;
+        padding:30px;
+        border-radius:14px;
+        margin-bottom:30px;
+        box-shadow:0 0 12px rgba(0,0,0,0.07);
         transition:0.3s;
     }
     .project-card:hover {
         transform:translateY(-5px);
-        box-shadow:0 4px 20px rgba(0,0,0,0.08);
+        box-shadow:0 6px 25px rgba(0,0,0,0.12);
     }
 
     footer {
         text-align:center;
-        padding:20px;
-        background:#fff;
-        border-top:2px solid #ff5733;
+        padding:25px;
+        background:#ffffff;
+        border-top:3px solid #e63946;
         margin-top:60px;
     }
 
@@ -150,20 +145,23 @@
 <nav>
     <a href="#home">Home</a>
     <a href="#about">About</a>
+    <a href="#skills">Skills</a>
     <a href="#projects">Projects</a>
     <a href="#contact">Contact</a>
 </nav>
 
 <header id="home">
     <div class="title">
-        <p>Hello<span>.</span></p>
+        <p style="font-size:20px;">Hello<span>!</span></p>
         <h1>I'm <span>Aniket Chougule</span></h1> 
-        <h2> Cloud & DevOps Enthusiast</h2>
+        <h2>Cloud & DevOps Engineer (Fresher)</h2>
+
         <div class="btn-group">
             <a href="https://github.com/aniketchougule108" target="_blank">GitHub</a>
-            <a href="resume.pdf" target="_blank">My Resume</a>
+            <a href="resume.pdf" target="_blank">Resume</a>
         </div>
     </div>
+
     <div class="hero-img">
         <img src="img/aniket.jpeg" alt="Profile">
     </div>
@@ -175,19 +173,21 @@
         <div class="skill">AWS</div>
         <div class="skill">Jenkins</div>
         <div class="skill">GitHub</div>
-        <div class="skill">Devops</div>
-        <div class="skill">Node.js</div>
+        <div class="skill">Docker</div>
         <div class="skill">Linux</div>
+        <div class="skill">CI/CD</div>
     </div>
 </section>
 
 <section id="about">
     <h2>About Me</h2>
     <div class="about-box">
-I am a highly motivated Cloud & DevOps Enthusiast passionate about automating deployments, building CI/CD pipelines, and hosting applications on cloud platforms like AWS. I have hands-on experience with key DevOps tools including Git, Jenkins, Docker, Linux, and monitoring solutions.
-
-I focus on secure deployments, performance optimization, and automation workflows that improve developer productivity and application reliability.
+        <p style="font-size:17px;">
+            I am a highly motivated Cloud & DevOps Engineer passionate about automating deployments,
+            building CI/CD pipelines, and hosting applications on AWS. Strong understanding of Git,
+            Jenkins, Docker, Linux & server deployments.
         </p>
+
         <div class="stats">
             <div class="stat">
                 <h3>05+</h3><p>Projects</p>
@@ -204,24 +204,30 @@ I focus on secure deployments, performance optimization, and automation workflow
 
 <section id="projects">
     <h2>Projects</h2>
+
     <div class="project-card">
-        <h3>CI/CD Pipeline</h3>
-        <p>Automated Node.js deployment using Jenkins, GitHub Webhook, PM2 & AWS EC2.</p>
+        <h3>CI/CD Pipeline Automation</h3>
+        <p>Automated deployments of Node.js app using Jenkins, GitHub Webhooks, PM2 & AWS EC2.</p>
     </div>
+
     <div class="project-card">
-        <h3>Master–Slave Architecture</h3>
-        <p>Configured Jenkins master and agent for distributed build automation.</p>
+        <h3>Jenkins Master–Agent Setup</h3>
+        <p>Configured distributed build architecture with secure SSH authentication.</p>
     </div>
+
     <div class="project-card">
-        <h3>Portfolio Hosting</h3>
-        <p>Deployed portfolio using Nginx and Git version control.</p>
+        <h3>Portfolio Hosting on Cloud</h3>
+        <p>Deployed personal portfolio with Nginx & version-controlled updates.</p>
     </div>
+
 </section>
 
 <section id="contact">
     <h2>Contact</h2>
-    <p>Email: <a href="mailto:aniketchougule678@gmail.com" style="color:#ff5733;">aniketchougule678@gmail.com</a></p>
-    <p>Mobile: <a href="tel:+917741029513" style="color:#ff5733;">+91 7741029513</a></p>
+    <p>Email: <a href="mailto:aniketchougule678@gmail.com" style="color:#e63946;">
+        aniketchougule678@gmail.com</a></p>
+    <p>Mobile: <a href="tel:+917741029513" style="color:#e63946;">
+        +91 7741029513</a></p>
 </section>
 
 <footer>
