@@ -139,7 +139,7 @@ In Jenkins Dashboard:
 ### 🌍 Live Deployment
 🚧 Deployment ready on AWS EC2 – Coming soon!
 
-![](./img/live%20Screenshot.png)
+![](./img/Screenshot%20(256).png)
 
 ![](./img/Screenshot%20(250).png)
 
